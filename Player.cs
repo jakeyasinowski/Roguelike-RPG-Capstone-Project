@@ -9,17 +9,17 @@ namespace Capstone_Project_RPG
     public class Player
     {
         // Player Variables
-        protected string name;
+        public string name;
         protected int maxPlayerHealth;
         protected int playerHealth;
-        protected int playerDamage;
+        public int playerDamage;
+        public bool playerDead = false;
 
         // Default Player Constructor
         public Player(string name, int maxPlayerHealth, int playerDamage)
         {
             this.name = name;
             this.maxPlayerHealth = maxPlayerHealth;
-            this.playerHealth = maxPlayerHealth;
             this.playerDamage = playerDamage;
         }
 
@@ -28,7 +28,7 @@ namespace Capstone_Project_RPG
             playerHealth -= amount;
             if (playerHealth < 0)
             {
-                Console.WriteLine("You died. \nGame Over");
+                playerDead = true;
             } 
         }
 
@@ -44,6 +44,21 @@ namespace Capstone_Project_RPG
         {
             maxPlayerHealth += addHealth;
             playerDamage += addDamage;
+        }
+
+        public int GetCurrentHealth() // Returns players health
+        {
+            return playerHealth;
+        }
+
+        public int GetMaxHealth() // Returns players max health
+        {
+            return maxPlayerHealth;
+        }
+
+        public void RestoreToFullHealth()
+        {
+            playerHealth = maxPlayerHealth;
         }
     }
 }

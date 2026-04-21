@@ -10,8 +10,8 @@ namespace Capstone_Project_RPG
     {
         // Loot Variables
         protected string name;
-        protected int addHealth;
-        protected int addDamage;
+        public int addHealth;
+        public int addDamage;
 
         // Loot Default Constructor
         public Loot(string name, int addHealth, int addDamage)
@@ -24,7 +24,7 @@ namespace Capstone_Project_RPG
         // Lists stats of loot obtained
         public virtual string ItemDescription()
         {
-            return $"Loot: {name}\n + Health: {addHealth}\n + Damage: {addDamage}";
+            return $"Loot: {name}\n Health: +{addHealth}\n Damage: +{addDamage}";
         }
     }
 }

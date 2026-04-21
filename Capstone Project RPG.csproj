@@ -43,7 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LootBowOfPiercing.cs" />
+    <Compile Include="LootChestplateOfDefense.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyDragon.cs" />
+    <Compile Include="EnemyGoblin.cs" />
+    <Compile Include="EnemyOrc.cs" />
+    <Compile Include="EnemyGiantRat.cs" />
+    <Compile Include="LootHelmetOfProtection.cs" />
     <Compile Include="Loot.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -51,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="LootSwordOfTruth.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
