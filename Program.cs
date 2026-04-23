@@ -34,10 +34,10 @@ namespace Capstone_Project_RPG
                 Loot sword = new SwordOfTruth();
 
                 // Introduction to the game
-                player.RestoreToFullHealth();
                 Console.WriteLine($"Welcome {player.name}! To attack, you'll just have to press any key.");
                 Console.WriteLine("Whenever you're ready, press any key to start.");
                 Console.ReadKey();
+                
                 Fight1(player, rat, chestplate);
 
             }
@@ -80,9 +80,9 @@ namespace Capstone_Project_RPG
                     battleActive = false;
                     Console.Clear();
                     Console.WriteLine("The rat has been slain!\n");
-                    Console.WriteLine("You have obtain the Chestplate Of Defense!\n");
+                    Console.WriteLine("You have obtained the Chestplate Of Defense!\n");
 
-                    chestplate.ItemDescription();
+                    Console.WriteLine(chestplate.ItemDescription());
 
                     Console.WriteLine("Do you want to equip the chestplate? (y/n)");
                     if (Console.ReadLine().ToLower() == "y")

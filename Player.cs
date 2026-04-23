@@ -11,7 +11,7 @@ namespace Capstone_Project_RPG
         // Player Variables
         public string name;
         protected int maxPlayerHealth;
-        protected int playerHealth;
+        protected int playerHealth = 100;
         public int playerDamage;
         public bool playerDead = false;
 

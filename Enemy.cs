@@ -31,9 +31,7 @@ namespace Capstone_Project_RPG
                 if (health < 0)
                 {
                     enemyDead = true;
-                }
-
-                   
+                }   
             }
 
             public void AttackPlayer(Player player) // Damages the player
