@@ -55,10 +55,5 @@ namespace Capstone_Project_RPG
         {
             return maxPlayerHealth;
         }
-
-        public void RestoreToFullHealth()
-        {
-            playerHealth = maxPlayerHealth;
-        }
     }
 }
