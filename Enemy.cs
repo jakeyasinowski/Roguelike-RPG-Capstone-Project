@@ -36,7 +36,7 @@ namespace Capstone_Project_RPG
                    
             }
 
-            public virtual void AttackPlayer(Player player) // Damages the player
+            public void AttackPlayer(Player player) // Damages the player
             {
                 player.TakeDamage(damage);
                 Console.WriteLine($"{name} attacks {player.name} for {damage} damage!\n");

@@ -87,22 +87,19 @@ namespace Capstone_Project_RPG
                     Console.WriteLine("Do you want to equip the chestplate? (y/n)");
                     if (Console.ReadLine().ToLower() == "y")
                     {
-                        Console.WriteLine("You equipped the chestplate!");
+                        Console.WriteLine("You equipped the chestplate!\n");
                         player.UpdatePlayerStats(chestplate.addHealth, chestplate.addDamage);
+                        player.ListPlayerStats();
                     }
                     else
                     {
                         Console.WriteLine("You decide to throw the chestplate away.");
                     }
 
-                    Console.WriteLine("Press any key to continue.");
+                    Console.WriteLine("This is the end of the demo, press any key to end the program.");
                     Console.ReadKey();
-
+                    Environment.Exit(0);
                 }
-
-                Console.WriteLine("Press any key to continue.");
-                Console.ReadKey();
-                Console.Clear();
             }
         }
     }

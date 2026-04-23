@@ -22,7 +22,7 @@ namespace Capstone_Project_RPG
         }
         
         // Lists stats of loot obtained
-        public virtual string ItemDescription()
+        public string ItemDescription()
         {
             return $"Loot: {name}\n Health: +{addHealth}\n Damage: +{addDamage}";
         }

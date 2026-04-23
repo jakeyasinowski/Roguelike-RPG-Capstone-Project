@@ -32,7 +32,7 @@ namespace Capstone_Project_RPG
             } 
         }
 
-        public virtual void ListPlayerStats() // Lists players current stats
+        public void ListPlayerStats() // Lists players current stats
         {
             Console.WriteLine($"Player: {name}");
             Console.WriteLine($"Max Health: {maxPlayerHealth}");
@@ -40,7 +40,7 @@ namespace Capstone_Project_RPG
             Console.WriteLine($"Damage: {playerDamage}");
         }
 
-        public virtual void UpdatePlayerStats(int addHealth, int addDamage) // Updates players current stats
+        public void UpdatePlayerStats(int addHealth, int addDamage) // Updates players current stats
         {
             maxPlayerHealth += addHealth;
             playerDamage += addDamage;
